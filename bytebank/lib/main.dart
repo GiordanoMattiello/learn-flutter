@@ -1,7 +1,16 @@
-import 'package:flutter/cupertino.dart';
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Text( 'bem vino11', textDirection: TextDirection.ltr ));
+  runApp(MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Transferencias"),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {print("Clicked"); },
+        child: Icon(Icons.add),
+      ),
+    ),
+  ));
 }
-
